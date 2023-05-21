@@ -1,0 +1,60 @@
+-- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
+--
+-- Host: localhost    Database: cs1_control
+-- ------------------------------------------------------
+-- Server version	8.0.29
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `acompanhamento_cs1`
+--
+
+DROP TABLE IF EXISTS `acompanhamento_cs1`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `acompanhamento_cs1` (
+  `idAcompanhamento_CS1` int NOT NULL AUTO_INCREMENT,
+  `hora` varchar(45) DEFAULT NULL,
+  `data` varchar(45) DEFAULT NULL,
+  `peça` int DEFAULT NULL,
+  `qtd` int DEFAULT NULL,
+  `qtdNOK` int DEFAULT NULL,
+  `problema` int DEFAULT NULL,
+  `RE` int DEFAULT NULL,
+  `turnoInsp` int DEFAULT NULL,
+  `turnoFabr` int DEFAULT NULL,
+  `acao` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idAcompanhamento_CS1`)
+) ENGINE=InnoDB AUTO_INCREMENT=236 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `acompanhamento_cs1`
+--
+
+LOCK TABLES `acompanhamento_cs1` WRITE;
+/*!40000 ALTER TABLE `acompanhamento_cs1` DISABLE KEYS */;
+INSERT INTO `acompanhamento_cs1` VALUES (223,'20:04','19/10/2022',2662,50,0,0,52952,2,3,NULL),(224,'20:04','19/10/2022',2588,50,1,1,52952,1,1,'refugar'),(225,'20:04','19/10/2022',2588,0,1,32,52952,1,3,'teste'),(227,'20:05','19/10/2022',2588,70,1,1,52952,2,1,'refuga'),(228,'20:05','19/10/2022',2588,0,2,2,52952,2,2,NULL),(229,'20:05','19/10/2022',2588,0,2,3,52952,2,3,NULL),(230,'20:05','19/10/2022',2588,0,3,4,52952,2,2,'estudar'),(231,'20:05','19/10/2022',2588,0,2,5,52952,2,1,NULL),(232,'07:41','21/10/2022',2662,50,0,0,52952,2,3,NULL),(233,'10:45','22/10/2022',2588,50,0,0,52952,2,0,NULL),(234,'10:45','22/10/2022',2588,50,0,0,52952,2,0,NULL),(235,'10:46','22/10/2022',2588,50,0,0,52952,2,3,NULL);
+/*!40000 ALTER TABLE `acompanhamento_cs1` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-10-23 18:49:56
