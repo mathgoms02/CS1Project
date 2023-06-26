@@ -43,7 +43,8 @@ public class Principal_CS1 extends javax.swing.JFrame {
                 g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
             }
 
-        };
+        }
+        ;
         jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -222,7 +223,7 @@ public class Principal_CS1 extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         String senha = JOptionPane.showInputDialog("Digite a Senha: ");
         
-        if("martinrea2022".equals(senha)){
+        if("matheusgomes".equals(senha)){
             FichaINSP ficha = new FichaINSP();
             PainelPrincipal.add(ficha);
             ficha.setVisible(true);

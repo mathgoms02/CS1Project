@@ -550,7 +550,7 @@ public class Pesquisar extends javax.swing.JInternalFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         
 //        String passwordADM = "52952math";
-//        String passwordUser = "cs1martinrea2022";
+//        String passwordUser = "matheusgomes";
 //        
 //        Box box = Box.createHorizontalBox();
 //        
@@ -574,7 +574,7 @@ public class Pesquisar extends javax.swing.JInternalFrame {
 //        }
         
         String senha = JOptionPane.showInputDialog(null, "Senha:", "CS1", JOptionPane.WARNING_MESSAGE);
-        if ("cs1martinrea2022".equals(senha)){
+        if ("matheusgomes2022".equals(senha)){
             remover(); //removendo
             carregaTabela();//atualizando
             }else{
